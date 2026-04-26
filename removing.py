@@ -8,3 +8,7 @@ data1 = {
 }
 print(data1)
 df = pd.DataFrame(data1)
+print(df)
+print("\n")
+df.drop(columns=["Performance Score"], inplace=True)
+print(df)
