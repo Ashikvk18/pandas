@@ -19,3 +19,7 @@ print(df1)
 #using insert method
 df1.insert(2, "Bonus", df1["Salary"] * 0.1)
 print(df1)
+
+print("\n")
+df1.insert(3, "Employee ID", [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11])
+print(df1)
