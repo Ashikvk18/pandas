@@ -10,7 +10,12 @@ df1 = pd.DataFrame(data1)
 high_salary = df1[df1["Salary"] > 5000]
 print(high_salary)
 
-## filtering with multiple conditions
+## filtering with multiple conditions (and condition)
 print("\n")
 multiple_conditions = df1[(df1["Salary"] > 5000) & (df1["Age"] < 100)]
 print(multiple_conditions)
+
+## filtering with multiple conditions (or condition)
+print("\n")
+multiple_conditions_or = df1[(df1["Salary"] > 5000) | (df1["Age"] < 100)]
+print(multiple_conditions_or)
