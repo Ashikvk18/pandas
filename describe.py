@@ -15,5 +15,12 @@ data1 = {
 df1 = pd.DataFrame(data1)
 print("DataFrame:")
 print(df1)
-print("\nDescribe:")
+print("\nDescribe:") # Statistical summary
 print(df1.describe())
+print("\nInfo:") # Shows data types and memory usage
+print(df1.info())
+
+# difference between describe and info
+# describe is used for numerical data
+# info is used for all data types but the major difference is that info shows data types and memory usage and describe shows statistical summary in simple words that is easy to understand describe and info are used for different purposes they are : 
+# describe is used for numerical data and info is used for all data types. Info shows data types and memory usage and describe shows statistical summary in simple words that is easy to understand
