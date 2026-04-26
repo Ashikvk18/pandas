@@ -7,3 +7,6 @@ data1 = {
     "Performance Score" : [88, 99, 91, 49, 55, 66, 77, 88, 99, 10, 11]
 }
 print(data1)
+df = pd.DataFrame(data1)
+df.loc[0, "Name"] = "Amit Sharma"
+print(df)
