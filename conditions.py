@@ -14,3 +14,7 @@ print(df1)
 print("\n")
 print("Name column:")
 print(df1["Name"])
+#selecting multiple columns
+print("\n")
+print("Multiple columns:")
+print(df1[["Name", "Age"]])
