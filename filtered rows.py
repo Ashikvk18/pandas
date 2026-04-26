@@ -9,3 +9,7 @@ data1 = {
 df1 = pd.DataFrame(data1)
 high_salary = df1[df1["Salary"] > 5000]
 print(high_salary)
+
+## filtering with multiple conditions
+multiple_conditions = df1[(df1["Salary"] > 5000) & (df1["Age"] < 100)]
+print(multiple_conditions)
