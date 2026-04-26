@@ -13,5 +13,9 @@ print("\n")
 df1 = pd.DataFrame(data1)
 print(df1)
 
-df1["Bonus"] = df1["Salary"] * 0.1
+# df1["Bonus"] = df1["Salary"] * 0.1
+# print(df1)
+
+#using insert method
+df1.insert(2, "Bonus", df1["Salary"] * 0.1)
 print(df1)
