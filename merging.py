@@ -18,3 +18,6 @@ print(df_left)
 
 df_right = pd.merge(df_customers, df_orders, on="CustomerID", how="right")
 print(df_right)
+
+df_outer = pd.merge(df_customers, df_orders, on="CustomerID", how="outer")
+print(df_outer)
