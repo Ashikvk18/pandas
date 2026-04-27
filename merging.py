@@ -21,3 +21,6 @@ print(df_right)
 
 df_outer = pd.merge(df_customers, df_orders, on="CustomerID", how="outer")
 print(df_outer)
+
+df_cross = pd.merge(df_customers, df_orders, how="cross")
+print(df_cross)
