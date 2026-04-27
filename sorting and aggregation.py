@@ -9,3 +9,12 @@ data1 = {
 print(data1)
 df = pd.DataFrame(data1)
 print(df)
+
+# Sort by age
+df_sorted = df.sort_values(by="Age", ascending=False)
+print(df_sorted)
+
+# Sort by multiple columns
+df_sorted = df.sort_values(by=["Age", "Salary"], ascending=[False, True])
+print(df_sorted)
+
