@@ -11,6 +11,7 @@ data1 = {
 }
 print(data1)
 df = pd.DataFrame(data1)
+df.set_index("Time", inplace=True)
 print(df)
 
 print ("after interpolation")
