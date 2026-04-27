@@ -7,4 +7,8 @@ print(data1)
 df = pd.DataFrame(data1)
 print(df)
 
+print ("after interpolation")
+
+df["Value"] = df["Value"].interpolate(method='linear')
+print(df)
 
