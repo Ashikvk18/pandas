@@ -16,3 +16,6 @@ print(df.isnull().sum()) #count of null values in each column
 
 df.interpolate(inplace=True)
 print(df)
+
+df.interpolate(method="linear", inplace=True)
+print(df)
