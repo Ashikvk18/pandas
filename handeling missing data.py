@@ -11,3 +11,5 @@ df = pd.DataFrame(data1)
 print(df)
 
 print(df.isnull())
+print("\n")
+print(df.isnull().sum()) #count of null values in each column
