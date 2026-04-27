@@ -10,22 +10,27 @@ df_orders = pd.DataFrame({
     "Product": ["Laptop", "Mouse", "Keyboard", "Monitor", "Headphones"]
 })
 
+print("inner join")
 df_merged = pd.merge(df_customers, df_orders, on="CustomerID", how="inner")
 print(df_merged)
 print("\n")
 
 df_left = pd.merge(df_customers, df_orders, on="CustomerID", how="left")
+print("left join")
 print(df_left)
 print("\n")
 
 df_right = pd.merge(df_customers, df_orders, on="CustomerID", how="right")
+print("right join")
 print(df_right)
 print("\n")
 
 df_outer = pd.merge(df_customers, df_orders, on="CustomerID", how="outer")
+print("outer join")
 print(df_outer)
 print("\n")
 
 df_cross = pd.merge(df_customers, df_orders, how="cross")
+print("cross join")
 print(df_cross)
 print("\n")
