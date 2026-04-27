@@ -8,5 +8,5 @@ data1 = {
 }
 print(data1)
 df = pd.DataFrame(data1)
-grouped = df.groupby("City")["Salary"].sum()
+grouped = df.groupby(["City", "Age"])["Salary"].sum()
 print(grouped)
