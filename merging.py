@@ -12,3 +12,6 @@ df_orders = pd.DataFrame({
 
 df_merged = pd.merge(df_customers, df_orders, on="CustomerID", how="inner")
 print(df_merged)
+
+df_left = pd.merge(df_customers, df_orders, on="CustomerID", how="left")
+print(df_left)
